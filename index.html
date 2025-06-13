@@ -1,124 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estudio Jurídico Fernández</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Merriweather', serif;
-      background-color: #f8f9fa;
-      color: #212529;
-    }
-    header {
-      background-color: #1c1f23;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header h2 {
-      margin: 0;
-      font-weight: normal;
-      font-size: 1.2rem;
-    }
-    .foto {
-      display: flex;
-      justify-content: center;
-      background-color: #fff;
-      padding: 1rem;
-    }
-    .foto img {
-      max-width: 300px;
-      height: auto;
-      border-radius: 0.5rem;
-    }
-    .contenido {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-    .contenido h3 {
-      margin-top: 0;
-    }
-    .botones-turno button {
-      background-color: #343a40;
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      margin: 0.5rem;
-      border-radius: 0.3rem;
-      cursor: pointer;
-    }
-    .botones-turno button:hover {
-      background-color: #495057;
-    }
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-    }
-    .whatsapp img {
-      width: 60px;
-      height: 60px;
-    }
-    footer {
-      background-color: #1c1f23;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Estudio Jurídico Fernández</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>ESTUDIO JURÍDICO</h1>
-    <h2>Fernández</h2>
-  </header>
-
-  <div class="foto">
-    <img src="tu-foto.jpg" alt="Doctora Fernández">
-  </div>
-
-  <div class="contenido">
-    <h3>Especialidades:</h3>
-    <ul>
-      <li>Regularización dominial de automotores</li>
-      <li>Penal y Ejecución penal</li>
-      <li>Laboral</li>
-      <li>Familia</li>
-    </ul>
-
-    <h3>Reserve un turno:</h3>
-    <p>Seleccione el tipo de turno y el horario del mismo. Los turnos online requieren un pago anticipado por Mercado Pago.</p>
-    <div class="botones-turno">
-      <button onclick="window.location.href='https://mpago.la/'">Turno Online</button>
-      <button onclick="alert('Para turnos presenciales, comuníquese por WhatsApp o por email.')">Turno Presencial</button>
-    </div>
-
-    <h3>Contacto</h3>
-    <p><strong>Dirección:</strong> Mariano Moreno 391, San Martín, Mendoza</p>
-    <p><strong>Horario de atención:</strong> Mañana de 9 a 12 hs | Tarde de 17 a 21 hs</p>
-    <p><strong>Email:</strong> estudiojuridicofernandezrr@gmail.com</p>
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/542634210691">+54 263 421-0691</a></p>
-  </div>
-
-  <a class="whatsapp" href="https://wa.me/542634210691" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
-  </a>
-
-  <footer>
-    &copy; 2025 Estudio Jurídico Fernández. Todos los derechos reservados.
-  </footer>
+    <header>
+        <h1>Estudio Jurídico Fernández</h1>
+        <p>Regularización dominial de automotores, penal y ejecución penal, laboral y familia.</p>
+        <p>Dirección: Mariano Moreno 391, San Martín, Mendoza</p>
+        <p>Horario: 9 a 12 hs y 17 a 21 hs</p>
+        <p>Contacto: estudiojuridicofernandezrr@gmail.com | WhatsApp: 2634210691</p>
+    </header>
+    <main>
+        <h2>Reservar turno</h2>
+        <form id="turno-form">
+            <label>Nombre completo: <input type="text" name="nombre" required></label><br>
+            <label>Email: <input type="email" name="email" required></label><br>
+            <label>Teléfono: <input type="tel" name="telefono" required></label><br>
+            <label>Fecha del turno: <input type="date" name="fecha" required></label><br>
+            <label>Hora: 
+                <select name="hora" required>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                </select>
+            </label><br>
+            <button type="button" onclick="pagar()">Reservar y pagar</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
