@@ -1,40 +1,34 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Estudio Jurídico Fernández</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estudio Jurídico Fernández</title>
+  <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-    <header>
+  <header class="hero">
+    <div class="overlay">
+      <div class="hero-content">
+        <img src="tu-foto.jpg" alt="Dra. Fernández" class="perfil"/>
         <h1>Estudio Jurídico Fernández</h1>
-        <p>Regularización dominial de automotores, penal y ejecución penal, laboral y familia.</p>
-        <p>Dirección: Mariano Moreno 391, San Martín, Mendoza</p>
-        <p>Horario: 9 a 12 hs y 17 a 21 hs</p>
-        <p>Contacto: estudiojuridicofernandezrr@gmail.com | WhatsApp: 2634210691</p>
-    </header>
-    <main>
-        <h2>Reservar turno</h2>
-        <form id="turno-form">
-            <label>Nombre completo: <input type="text" name="nombre" required></label><br>
-            <label>Email: <input type="email" name="email" required></label><br>
-            <label>Teléfono: <input type="tel" name="telefono" required></label><br>
-            <label>Fecha del turno: <input type="date" name="fecha" required></label><br>
-            <label>Hora: 
-                <select name="hora" required>
-                    <option value="09:00">09:00</option>
-                    <option value="10:00">10:00</option>
-                    <option value="11:00">11:00</option>
-                    <option value="17:00">17:00</option>
-                    <option value="18:00">18:00</option>
-                    <option value="19:00">19:00</option>
-                    <option value="20:00">20:00</option>
-                </select>
-            </label><br>
-            <button type="button" onclick="pagar()">Reservar y pagar</button>
-        </form>
-    </main>
-    <script src="script.js"></script>
+        <p>Regularización dominial, penal, ejecución penal, laboral y familia.</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="info">
+    <h2>Sobre el estudio</h2>
+    <ul>
+      <li><strong>Dirección:</strong> Mariano Moreno 391, San Martín, Mendoza</li>
+      <li><strong>Horarios:</strong> 9 a 12 hs y 17 a 21 hs</li>
+      <li><strong>WhatsApp:</strong> <a href="https://wa.me/542634210691">2634210691</a></li>
+      <li><strong>Email:</strong> estudiojuridicofernandezrr@gmail.com</li>
+    </ul>
+    <a href="turnos.html" class="boton">Reservar turno</a>
+  </section>
+
+  <a href="https://wa.me/542634210691" class="whatsapp" target="_blank">💬</a>
 </body>
 </html>

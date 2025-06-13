@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservar Turno</title>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Reservar Turno</h1>
+    <p>Seleccione una fecha para su consulta:</p>
+    <input type="date" id="fecha" />
+    <h2>Total: $20.000</h2>
+    <p>La reserva se confirma solo con el pago.</p>
+    <form action="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=TU_ID_DE_PREFERENCIA" method="GET" target="_blank">
+      <button class="boton" type="submit">Pagar y Confirmar Turno</button>
+    </form>
+    <br><a href="index.html">← Volver</a>
+  </div>
+</body>
+</html>

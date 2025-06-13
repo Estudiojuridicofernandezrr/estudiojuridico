@@ -1,6 +1,66 @@
-body { font-family: Arial, sans-serif; margin: 20px; }
-header { background-color: #00264d; color: white; padding: 20px; border-radius: 10px; }
-main { margin-top: 20px; }
-form label { display: block; margin: 10px 0; }
-button { padding: 10px 15px; background-color: #0077cc; color: white; border: none; border-radius: 5px; cursor: pointer; }
-button:hover { background-color: #005fa3; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+.hero {
+  background: url('fondo-justicia.jpg') center/cover no-repeat;
+  height: 90vh;
+  position: relative;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-content {
+  text-align: center;
+  color: white;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+}
+.perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 1rem;
+}
+.info {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+.boton {
+  display: inline-block;
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+input[type="date"] {
+  padding: 10px;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
